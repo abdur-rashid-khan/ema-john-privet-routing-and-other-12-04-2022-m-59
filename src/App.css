@@ -1,0 +1,29 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+/* color */
+:root{
+  --fontDuf:#1C2B35;
+  --header:#1C2B35;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size:100%;
+  color:var(--fontDuf);
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container{
+  width: 1250px;
+  height: auto;
+  margin: auto;
+  padding: 0rem .9rem;
+}

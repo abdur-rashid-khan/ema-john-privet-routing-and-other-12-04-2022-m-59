@@ -1,0 +1,20 @@
+#order{
+   padding-top: 5rem;
+}
+#order{
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+}
+#order-card{
+   position: fixed;
+   top: 10%;
+   right: 0%;
+   background-color: aqua;
+   padding: 1rem;
+   margin-right: .5rem;
+   border-radius: .5rem;
+   -webkit-border-radius: .5rem;
+   -moz-border-radius: .5rem;
+   -ms-border-radius: .5rem;
+   -o-border-radius: .5rem;
+}
