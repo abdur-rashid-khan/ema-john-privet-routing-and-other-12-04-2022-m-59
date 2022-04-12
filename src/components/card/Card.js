@@ -1,6 +1,7 @@
 import React from 'react';
 import {  faShop, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 const Card = (props) => {
    let product=props.data;
@@ -39,7 +40,7 @@ const Card = (props) => {
          </div>
          <div className="sopping-option">
             <a href='' onClick={clearBtn} className='clearBtn'>Clear Card <p className='icon'><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p></a>
-            <button className='Order'>Review Order <p className='icon'><FontAwesomeIcon icon={faShop}></FontAwesomeIcon></p> </button>
+            <Link style={{textAlign:'center'}} to={'/order'} className='Order'>Review Order <p className='icon'><FontAwesomeIcon icon={faShop}></FontAwesomeIcon></p> </Link>
          </div>
 </div>
    );

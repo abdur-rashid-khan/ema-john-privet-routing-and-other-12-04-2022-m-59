@@ -12,7 +12,7 @@ const Navbar = () => {
          <div className="mane-items">
             <CustomLink to='/shop'>Shop</CustomLink>
             <CustomLink to='/order'>Order</CustomLink>
-            <CustomLink to='/inventory'>Manage Inventory</CustomLink>
+            <CustomLink to='/contact'>Contact</CustomLink>
             <CustomLink to='/login'>Log in</CustomLink>
          </div>
       </div>

@@ -3,7 +3,7 @@ import './Inventory.css'
 const Inventory = () => {
    return (
       <div id='inventory'>
-         <h1>This is Manage Inventory </h1>
+         <h1>This is contact </h1>
       </div>
    );
 };
