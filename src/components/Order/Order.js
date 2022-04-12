@@ -7,15 +7,18 @@ import './Order.css';
 const Order = () => {
    const [products , setProducts]=useProducts();
    const [card, setCard]=useCard(products);
+   const clearCart=()=>{
+      console.log('clear')
+   }
    return (
       <div id='order'>
-         <div id="order-products">
+         <div id="order-products " className='grid grid-cols-3 gap-2'>
          {
-            card.map(product => <Review key={product.id} data={product}></Review>)
+            card.map(product => <Review key={product.id} data={product} ></Review>)
          }
          </div>
          <div id="order-card">
-            <Card data={card}></Card>
+            <Card clearCart={clearCart} data={card}></Card>
          </div>
       </div>
    );

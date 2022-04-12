@@ -3,7 +3,11 @@ import {  faShop, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = (props) => {
-   const product=props.data;
+   let product=props.data;
+
+   const clearBtn =()=>{
+      localStorage.removeItem('shopping card');
+   }
    let price=0;
    let shipping = 0;
    let quantity=0;
@@ -34,7 +38,7 @@ const Card = (props) => {
             </ul>
          </div>
          <div className="sopping-option">
-            <button className='clearBtn'>Clear Card <p className='icon'><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p></button>
+            <a href='' onClick={clearBtn} className='clearBtn'>Clear Card <p className='icon'><FontAwesomeIcon icon={faTrash}></FontAwesomeIcon></p></a>
             <button className='Order'>Review Order <p className='icon'><FontAwesomeIcon icon={faShop}></FontAwesomeIcon></p> </button>
          </div>
 </div>

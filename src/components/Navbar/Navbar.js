@@ -10,9 +10,10 @@ const Navbar = () => {
          <img className='logo' src={logo} alt="" />
          </div>
          <div className="mane-items">
-            <CustomLink to='/shop'>shop</CustomLink>
-            <CustomLink to='/order'>order</CustomLink>
+            <CustomLink to='/shop'>Shop</CustomLink>
+            <CustomLink to='/order'>Order</CustomLink>
             <CustomLink to='/inventory'>Manage Inventory</CustomLink>
+            <CustomLink to='/login'>Log in</CustomLink>
          </div>
       </div>
       </nav>

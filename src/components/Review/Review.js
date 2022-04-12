@@ -3,11 +3,13 @@ import React from 'react';
 const Review = ({data}) => {
    const {img,name,price,quantity} = data;
    return (
-      <div>
+      <div className='border-2'>
          <img src={img} alt={name} />
-         <p>name : {name}</p>
-         <p>Price : {price}</p>
-         <p>lenght : {quantity}</p>
+         <div className="p-2">
+            <p className=''>name : {name}</p>
+            <p className=''>Price : {price}</p>
+            <p className=''>lenght : {quantity}</p>
+         </div>
       </div>
    );
 };
