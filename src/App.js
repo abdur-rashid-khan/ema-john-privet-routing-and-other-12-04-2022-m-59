@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import './components/Navbar/Navbar.css'
 import NoDataFound from './components/NoDataFound/NoDataFound';
 import Order from './components/Order/Order';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 import Shop from './components/Shop/Shop';
 import SignIn from './components/SignIn/SignIn';
 function App() {
@@ -18,7 +19,12 @@ function App() {
           <Route path='/' element={<Shop></Shop>}></Route>
           <Route path='/shop' element={<Shop></Shop>}></Route>
           <Route path='/order' element={<Order></Order>}></Route>
-          <Route path='/contact' element={<Inventory></Inventory>}></Route>
+          <Route path='/contact' element={
+            <RequireAuth>
+              <Inventory></Inventory>
+            </RequireAuth>
+          }>
+          </Route>
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/sign-in' element={<SignIn></SignIn>}></Route>
           <Route path='/forgot-password' element={<Forgot></Forgot>}></Route>
